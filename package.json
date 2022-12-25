@@ -1,0 +1,14 @@
+{
+  "name": "binaryveda-assignment",
+  "version": "1.0.0",
+  "description": "This is a simple server-side signup application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dip_10",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
