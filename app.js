@@ -6,8 +6,8 @@ const { body, checkSchema, validationResult } = require("express-validator");
 require("dotenv").config();
 
 //database configuration
-require("./db/config");
-const User = require("./models/user.model");
+require("./src/db/config");
+const User = require("./src/models/user.model");
 
 const app = express();
 
