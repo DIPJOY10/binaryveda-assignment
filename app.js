@@ -6,15 +6,15 @@ const { body, checkSchema, validationResult } = require("express-validator");
 require("dotenv").config();
 
 //database configuration
-require("./src/db/config");
-const User = require("./src/models/user.model");
+require("./db/config");
+const User = require("./models/user.model");
 
 const app = express();
 
 //todo:password encryption using bcrypt
 
 //middlewares
-app.set("views", "./src/views");
+app.set("views", "views");
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
