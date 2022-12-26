@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 mongoose.set("strictQuery", false);
 
-const connection_url =
-  "mongodb+srv://bv_test:bv1234@cluster0.hsnw3jb.mongodb.net/?retryWrites=true&w=majority";
+//todo: async
+const connection_url = `mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASS}@cluster0.hsnw3jb.mongodb.net/?retryWrites=true&w=majority`;
 
 mongoose
   .connect(connection_url, {
